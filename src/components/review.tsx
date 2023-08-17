@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Review = (props) => {
   return (
@@ -38,7 +38,7 @@ const Review = (props) => {
           </div>
         </main>
       </section>
-      <style jsx>
+      <style>
         {`
           .review-card {
             gap: var(--dl-space-space-threeunits);
@@ -141,19 +141,19 @@ const Review = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Review.defaultProps = {
   Quote:
-    '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.”',
-  Author: 'Sima Mosbacher',
-  rootClassName: '',
+    "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.”",
+  Author: "Sima Mosbacher",
+  rootClassName: "",
   AvatarSrc:
-    'https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHBvdHJhaXR8ZW58MHx8fHwxNjY3NzU5NDE3&ixlib=rb-4.0.3&w=200',
-  Position: 'Manager',
-  AvatarAlt: 'image',
-}
+    "https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHBvdHJhaXR8ZW58MHx8fHwxNjY3NzU5NDE3&ixlib=rb-4.0.3&w=200",
+  Position: "Manager",
+  AvatarAlt: "image",
+};
 
 Review.propTypes = {
   Quote: PropTypes.string,
@@ -162,6 +162,6 @@ Review.propTypes = {
   AvatarSrc: PropTypes.string,
   Position: PropTypes.string,
   AvatarAlt: PropTypes.string,
-}
+};
 
-export default Review
+export default Review;

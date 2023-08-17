@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Mark = (props) => {
   return (
@@ -13,7 +13,7 @@ const Mark = (props) => {
         </div>
         <p className="mark-label">{props.Label}</p>
       </div>
-      <style jsx>
+      <style>
         {`
           .mark-mark {
             gap: var(--dl-space-space-halfunit);
@@ -47,15 +47,15 @@ const Mark = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Mark.defaultProps = {
-  Label: 'Duis aute irure dolor in reprehenderit',
-}
+  Label: "Duis aute irure dolor in reprehenderit",
+};
 
 Mark.propTypes = {
   Label: PropTypes.string,
-}
+};
 
-export default Mark
+export default Mark;

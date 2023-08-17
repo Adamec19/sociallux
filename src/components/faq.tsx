@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const FAQ = (props) => {
   return (
@@ -15,7 +15,7 @@ const FAQ = (props) => {
               What is sit amet, consectetur adipiscing elit, sed do?
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -28,7 +28,7 @@ const FAQ = (props) => {
               anim id.
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -57,7 +57,7 @@ const FAQ = (props) => {
               anim id.
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -85,7 +85,7 @@ const FAQ = (props) => {
               anim id.
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -114,7 +114,7 @@ const FAQ = (props) => {
               anim id.
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -134,7 +134,7 @@ const FAQ = (props) => {
               What is sit amet, consectetur adipiscing elit, sed do?
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -147,7 +147,7 @@ const FAQ = (props) => {
               anim id.
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -175,7 +175,7 @@ const FAQ = (props) => {
               anim id.
               <span
                 dangerouslySetInnerHTML={{
-                  __html: ' ',
+                  __html: " ",
                 }}
               />
             </span>
@@ -187,7 +187,7 @@ const FAQ = (props) => {
           </div>
         </div>
       </div>
-      <style jsx>
+      <style>
         {`
           .faq-accordion {
             width: 100%;
@@ -437,15 +437,15 @@ const FAQ = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 FAQ.defaultProps = {
-  rootClassName: '',
-}
+  rootClassName: "",
+};
 
 FAQ.propTypes = {
   rootClassName: PropTypes.string,
-}
+};
 
-export default FAQ
+export default FAQ;

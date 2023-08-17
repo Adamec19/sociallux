@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Card = (props) => {
   return (
@@ -14,7 +14,7 @@ const Card = (props) => {
           <p className="card-description">{props.Description}</p>
         </main>
       </section>
-      <style jsx>
+      <style>
         {`
           .card-card {
             gap: var(--dl-space-space-oneandhalfunits);
@@ -80,17 +80,17 @@ const Card = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Card.defaultProps = {
   Description:
-    'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium',
-  rootClassName: '',
-  Icon: '/Icons/group%201316-200w.png',
-  IconAlt: 'image',
-  Header: 'Sima Mosbacher',
-}
+    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+  rootClassName: "",
+  Icon: "/Icons/group%201316-200w.png",
+  IconAlt: "image",
+  Header: "Sima Mosbacher",
+};
 
 Card.propTypes = {
   Description: PropTypes.string,
@@ -98,6 +98,6 @@ Card.propTypes = {
   Icon: PropTypes.string,
   IconAlt: PropTypes.string,
   Header: PropTypes.string,
-}
+};
 
-export default Card
+export default Card;

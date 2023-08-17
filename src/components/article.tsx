@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Article = (props) => {
   return (
@@ -23,7 +23,7 @@ const Article = (props) => {
           </div>
         </main>
       </section>
-      <style jsx>
+      <style>
         {`
           .article-card {
             gap: var(--dl-space-space-oneandhalfunits);
@@ -100,17 +100,17 @@ const Article = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Article.defaultProps = {
-  rootClassName: '',
-  Button: 'Read ->',
-  ButtonLink: '',
+  rootClassName: "",
+  Button: "Read ->",
+  ButtonLink: "",
   Description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-  Header: 'TechCrunch',
-}
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  Header: "TechCrunch",
+};
 
 Article.propTypes = {
   rootClassName: PropTypes.string,
@@ -118,6 +118,6 @@ Article.propTypes = {
   ButtonLink: PropTypes.string,
   Description: PropTypes.string,
   Header: PropTypes.string,
-}
+};
 
-export default Article
+export default Article;

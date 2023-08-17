@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import Script from 'dangerous-html/react'
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Navbar = (props) => {
   return (
@@ -53,56 +52,8 @@ const Navbar = (props) => {
             <span className="navbar-text1">Get started</span>
           </div>
         </div>
-        <div>
-          <Script
-            html={`<script>
-    /*
-Mobile menu - Code Embed
-*/
-
-/* listenForUrlChangesMobileMenu() makes sure that if you changes pages inside your app, 
-the mobile menu will still work*/
-
-const listenForUrlChangesMobileMenu = () => {
-    let url = location.href;
-    document.body.addEventListener("click", () => {
-        requestAnimationFrame(() => {
-            if (url !== location.href) {
-                runMobileMenuCodeEmbed();
-                url = location.href;
-            }
-        });
-    },
-    true
-    );
-};
-
-const runMobileMenuCodeEmbed = () => {
-    // Mobile menu
-    const mobileMenu = document.querySelector("#mobile-menu")
-
-    // Buttons
-    const closeButton = document.querySelector("#close-mobile-menu")
-    const openButton = document.querySelector("#open-mobile-menu")
-
-    // On openButton click, set the mobileMenu position left to -100vw
-    openButton && openButton.addEventListener("click", function() {
-        mobileMenu.style.transform = "translateX(0%)"
-    })
-
-    // On closeButton click, set the mobileMenu position to 0vw
-    closeButton && closeButton.addEventListener("click", function() {
-        mobileMenu.style.transform = "translateX(100%)"
-    })
-}
-
-runMobileMenuCodeEmbed()
-listenForUrlChangesMobileMenu()
-</script>`}
-          ></Script>
-        </div>
       </nav>
-      <style jsx>
+      <style>
         {`
           .navbar-navbar {
             width: 100%;
@@ -244,17 +195,17 @@ listenForUrlChangesMobileMenu()
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Navbar.defaultProps = {
-  image_alt: 'image',
-  image_src1: '/Branding/planical7012-ttpb.svg',
-  image_src: '/Icons/hamburger-200h.png',
-  image_alt1: 'image',
-  rootClassName: '',
-  BrandingLogo: '/Branding/planical7012-wzf.svg',
-}
+  image_alt: "image",
+  image_src1: "/Branding/planical7012-ttpb.svg",
+  image_src: "/Icons/hamburger-200h.png",
+  image_alt1: "image",
+  rootClassName: "",
+  BrandingLogo: "/Branding/planical7012-wzf.svg",
+};
 
 Navbar.propTypes = {
   image_alt: PropTypes.string,
@@ -263,6 +214,6 @@ Navbar.propTypes = {
   image_alt1: PropTypes.string,
   rootClassName: PropTypes.string,
   BrandingLogo: PropTypes.string,
-}
+};
 
-export default Navbar
+export default Navbar;

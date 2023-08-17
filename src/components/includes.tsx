@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Includes = (props) => {
   return (
@@ -13,7 +13,7 @@ const Includes = (props) => {
         </div>
         <label className="includes-label">{props.Label}</label>
       </div>
-      <style jsx>
+      <style>
         {`
           .includes-mark {
             gap: var(--dl-space-space-halfunit);
@@ -46,17 +46,17 @@ const Includes = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Includes.defaultProps = {
-  rootClassName: '',
-  Label: 'Sed ut pespiciatis unde omnis',
-}
+  rootClassName: "",
+  Label: "Sed ut pespiciatis unde omnis",
+};
 
 Includes.propTypes = {
   rootClassName: PropTypes.string,
   Label: PropTypes.string,
-}
+};
 
-export default Includes
+export default Includes;

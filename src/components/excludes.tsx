@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 const Excludes = (props) => {
   return (
@@ -13,7 +13,7 @@ const Excludes = (props) => {
         </div>
         <label className="excludes-label">{props.Label}</label>
       </div>
-      <style jsx>
+      <style>
         {`
           .excludes-mark {
             gap: var(--dl-space-space-halfunit);
@@ -46,17 +46,17 @@ const Excludes = (props) => {
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 Excludes.defaultProps = {
-  Label: 'Sed ut pespiciatis unde omnis',
-  rootClassName: '',
-}
+  Label: "Sed ut pespiciatis unde omnis",
+  rootClassName: "",
+};
 
 Excludes.propTypes = {
   Label: PropTypes.string,
   rootClassName: PropTypes.string,
-}
+};
 
-export default Excludes
+export default Excludes;
